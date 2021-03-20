@@ -1,0 +1,185 @@
+.offers {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto 140px;
+  padding: 0;
+  text-align: center;
+
+  @media (max-width: 800px) {
+    margin-left: 10px;
+    margin-right: 10px;
+    width:auto;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 50px;
+  }
+
+  .title {
+    font-size: 22px;
+    color: #566375;
+
+    @media (max-width: 600px) {
+      font-size: 18px;
+    }
+  }
+
+  .subtitle {
+    font-family: "Gotham Book";
+    font-size: 16px;
+    color: #96a6a7;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 65px 0 30px;
+
+    @media (max-width: 600px) {
+      margin: 30px 0;
+    }
+  }
+}
+
+.offer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+
+  background: center no-repeat;
+  border-radius: 50px;
+  border: 2px solid #999999;
+
+  cursor: pointer;
+  transition: .2s linear, transform 5s linear;
+
+  @media (max-width: 600px) {
+    width: 50px;
+    height: 50px;
+    background-size: 50%;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -62%;
+    top: 50%;
+    z-index: 1;
+
+    width: 50px;
+    height: 2px;
+    background-color: #e2dee0;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &--reality {
+    background-image: url("../../assets/img/offers/reality.png");
+
+    &.active {
+      border-color: #339966;
+      background-image: url("../../assets/img/offers/reality-active.png");
+    }
+  }
+
+  &--person {
+    background-image: url("../../assets/img/offers/person.png");
+
+    &.active {
+      border-color: #cccc00;
+      background-image: url("../../assets/img/offers/person-active.png");
+    }
+  }
+
+  &--education {
+    background-image: url("../../assets/img/offers/education.png");
+
+    &.active {
+      border-color: #6699ff;
+      background-image: url("../../assets/img/offers/education-active.png");
+    }
+  }
+
+  &--music {
+    background-image: url("../../assets/img/offers/music.png");
+
+    &.active {
+      border-color: #f19e1f;
+      background-image: url("../../assets/img/offers/music-active.png");
+    }
+  }
+
+  &--trans {
+    background-image: url("../../assets/img/offers/trans.png");
+
+    &.active {
+      border-color: #88499c;
+      background-image: url("../../assets/img/offers/trans-active.png");
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    color: #1db05e;
+
+    margin-bottom: 40px;
+
+    @media (max-width: 600px) {
+      font-size: 18px;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+    }
+
+    &__col {
+      display: flex;
+
+      &:first-child {
+        padding-right: 30px;
+      }
+    }
+
+    &-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+
+      width: 62px;
+      height: 62px;
+      margin-right: 30px;
+
+      align-self: center;
+      border-radius: 50px;
+      background-color: #1db05e;
+
+      @media (max-width: 600px) {
+        width: 50px;
+        height: 50px;
+        background-size: 50%;
+      }
+    }
+
+    &-text {
+      font-family: "Gotham Book";
+      font-size: 14px;
+      color: #666666;
+    }
+  }
+}

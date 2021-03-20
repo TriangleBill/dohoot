@@ -1,0 +1,138 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px 0;
+
+  color: #96a6a7;
+  text-transform: uppercase;
+  font-size: 12px;
+
+  align-items: center;
+
+  @media (max-width: 1020px) {
+    margin: 0 10px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 860px) {
+    font-size: 10px;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    @media (max-width: 860px) {
+      flex-grow: 0;
+    }
+
+    @media (max-width: 550px) {
+      margin-bottom: 10px;
+    }
+
+    &:nth-child(2) {
+      @media (max-width: 860px) {
+        width: 100%;
+        order: 3;
+        flex-grow: 0;
+      }
+
+      @media (max-width: 550px) {
+        width: auto;
+      }
+    }
+
+
+    &--icons {
+      justify-self: right;
+      flex-grow: 0;
+
+      p {
+        margin-right: 10px;
+      }
+
+      img {
+        margin-right: 10px;
+
+        cursor: pointer;
+
+        @media (max-width: 860px) {
+          width: 35px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__country {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 115px;
+    height: 40px;
+
+    padding-left: 20px;
+
+    border: 1px #cad2d3 solid;
+    border-radius: 2.3em;
+
+    cursor: pointer;
+
+    &__item{
+      &.active {
+        color: $danger-color;
+      }
+    }
+
+    img {
+      position: absolute;
+      right: 20px;
+    }
+  }
+}
+
+.category {
+  padding-right: 20px;
+  cursor: pointer;
+  transition: .2s;
+
+  &.active {
+    color: $danger-color;
+  }
+}
+
+.hide-map {
+  width: 115px;
+  height: 40px;
+
+  position: relative;
+  margin-left: 10px;
+  padding-left: 20px;
+
+  text-align: left;
+  text-transform: uppercase;
+  color: white;
+
+  background-color: #1baf5d;
+  border-radius: 2.3em;
+
+  cursor: pointer;
+
+  img {
+    position: absolute;
+    right: 20px;
+  }
+}
+
+.filter-icon {
+  &.active {
+    border: 1px #cccc00 solid;
+    border-radius: 50px;
+  }
+}

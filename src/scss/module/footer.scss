@@ -1,0 +1,133 @@
+.footer {
+  padding: 60px 0;
+  background: url("../../assets/img/footer/footer-bg.png") center no-repeat;
+  background-size: cover;
+
+  .container {
+    @media (max-width: 1040px) {
+      margin: 0 10px;
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (max-width: 580px) {
+      font-size: 20px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &-col {
+      width: 33%;
+      color: white;
+
+      @media (max-width: 580px) {
+        width: auto;
+        margin-bottom: 20px;
+
+        &:nth-child(2) {
+          justify-self: right;
+        }
+      }
+
+      &:last-child {
+        @media (max-width: 580px) {
+          width: 100%;
+        }
+      }
+
+      .title {
+        font-size: 16px;
+        text-decoration: underline;
+        margin-bottom: 20px;
+      }
+
+      .ref {
+        font-family: "Gotham Book";
+        font-size: 14px;
+        color: #999590;
+
+        @media (max-width: 580px) {
+          bottom: -40px;
+        }
+      }
+    }
+  }
+}
+
+.subscribe-mail-input {
+  @include input;
+  width: 100%;
+  max-width: 490px;
+  margin: 40px auto 50px;
+  padding: 4px 4px 4px 30px;
+
+  @media (max-width: 580px) {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  input {
+    flex-grow: 1;
+    background: none;
+    color: white;
+    font-size: 18px;
+
+    @media (max-width: 580px) {
+      font-size: 14px;
+    }
+  }
+
+  img {
+    align-self: center;
+    margin-right: 15px;
+
+    @media (max-width: 580px) {
+      display: none;
+    }
+  }
+}
+
+.subscribe-btn {
+  @include btn;
+  width: 120px;
+  height: 50px;
+  margin: 0;
+  font-size: 14px;
+  padding: 0;
+
+  @media (max-width: 580px) {
+    font-size: 12px;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 160px;
+
+  @media (max-width: 580px) {
+    max-width: 250px;
+  }
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+}
+

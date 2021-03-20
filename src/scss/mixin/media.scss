@@ -1,0 +1,51 @@
+
+@mixin btn {
+    padding: 20px 30px;
+    border-radius: 30px;
+    background-color: $danger-color;
+
+    margin: 10px auto;
+
+    color: white;
+    cursor: pointer;
+
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: darken(#e94e38, 25%);
+    }
+}
+
+@mixin input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 225px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    background: url("../img/search/arrow.png") 96% 30px  no-repeat rgba(#5e5b53, .6);
+    border-radius: 40px;
+
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 18px;
+
+    cursor: pointer;
+
+    &--input {
+        display: block;
+        max-width: none;
+
+        background: rgba(#5e5b53, .6);
+        caret-color: white;
+        color: white;
+        cursor: auto;
+
+        &::placeholder {
+            color: white;
+        }
+    }
+}

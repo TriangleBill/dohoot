@@ -1,0 +1,88 @@
+.modal__wafer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden;
+
+  transition: all .2s linear;
+
+  background-color: rgba(gray, .8);
+
+  &.active {
+    display: flex;
+  }
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+
+  font-size: 16px;
+
+  width: 300px;
+  height: 500px;
+  background-color: white;
+
+  transform: translateY(-100px);
+  transition: all .2s linear;
+
+  h1 {
+    font-size: 25px;
+    margin: 50px auto;
+  }
+}
+
+.modal-form {
+  display: flex;
+
+  .inputs {
+    width: 150px;
+    margin-left: 10px;
+
+    input {
+      width: 150px;
+      margin-top: 18px;
+    }
+  }
+
+}
+
+.send {
+  display: block;
+  align-self: center;
+
+  margin: 20px auto 20px;
+  border-radius: 20px;
+
+  background-color: $danger-color;
+  transition: all .2s linear;
+
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+
+  &:hover {
+    background-color: darken($danger-color, 20%);
+  }
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  color: $primary-color;
+  text-decoration: underline;
+
+  &-item {
+    cursor: pointer;
+  }
+}

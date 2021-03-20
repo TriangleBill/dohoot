@@ -1,0 +1,788 @@
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>dohoot</title>
+<link href="./assets/css/styles.css" rel="stylesheet"></head>
+<body>
+<!--Header-->
+<!--  Header-->
+<header class="header">
+    <img class="logo" src="assets/img/header/logo.png" alt="">
+    <div class="burger">
+        <div class="burger__item"></div>
+    </div>
+
+    <div class="header__item">
+        <ul class="nav">
+            <li class="nav__item">reality</li>
+            <li class="nav__item">living</li>
+            <li class="nav__item">education</li>
+            <li class="nav__item">entertainment</li>
+            <li class="nav__item">mobility</li>
+        </ul>
+
+
+        <form action="">
+            <label for="search__input" class="header__search">
+                <input type="search" id="search__input" class="search__input">
+                <img src="assets/img/header/search.png" alt="" class="header__search-loop">
+            </label>
+        </form>
+
+        <button class="log">
+            <img src="assets/img/header/person.png" alt="">
+            <p class="login">login</p>
+        </button>
+    </div>
+
+</header>
+
+<!--Search-->
+<!--Search-->
+<section class="search">
+    <div class="search__wrapper">
+        <div class="search__title">What are you looking for?</div>
+
+        <div class="search__inner">
+            <div class="search__parameters select">
+                <div class="select__header">Dubai</div>
+
+                <div class="select__body">
+                    <div class="select__item">Dubai</div>
+                    <div class="select__item">Egypt</div>
+                    <div class="select__item">Sochi</div>
+                </div>
+            </div>
+            <div class="search__parameters select">
+                <div class="select__header">Education</div>
+
+                <div class="select__body">
+                    <div class="select__item">Education</div>
+                    <div class="select__item">Trans</div>
+                    <div class="select__item">Person</div>
+                    <div class="select__item">Music</div>
+                    <div class="select__item">Reality</div>
+                </div>
+            </div>
+
+            <input type="text" class="search__parameters search__parameters--input" placeholder="Keyword, name, date, ...">
+
+            <button class="search__btn">search</button>
+        </div>
+    </div>
+</section>
+
+<!--Filter-->
+<!--  Filter-->
+<div class="container">
+    <section class="filter">
+
+        <div class="filter__item" id="category">
+            <div class="category active">recommended</div>
+            <div class="category">latest</div>
+            <div class="category">highlights</div>
+        </div>
+
+        <div class="filter__item">
+            <div class="filter__country">
+                <div class="filter__country__item active">Dubai</div>
+                <img src="assets/img/filter/arrow.png" alt="">
+            </div>
+            <button class="hide-map">
+                hide map
+                <img src="assets/img/filter/map.png" alt="">
+            </button>
+        </div>
+
+        <div class="filter__item filter__item--icons">
+            <p>Filter:</p>
+            <img class="filter-icon filter-agency" src="assets/img/agency.png" alt="">
+            <img class="filter-icon filter-person" src="assets/img/person.png" alt="">
+            <img class="filter-icon filter-education" src="assets/img/education.png" alt="">
+            <img class="filter-icon filter-music" src="assets/img/music.png" alt="">
+            <img class="filter-icon filter-trans" src="assets/img/trans.png" alt="">
+        </div>
+    </section>
+</div>
+
+<!--Posts-->
+<!--  Posts-->
+<div class="posts">
+    <div class="container">
+        <div class="posts__col">
+            <div class="card card--agency">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/1.png" alt="">
+                    <div class="price"><p>$2,990</p></div>
+                    <img src="assets/img/agency.png" alt="" class="card__icon">
+
+                    <div class="card__view">
+                        <button class="show-more">
+                            <img src="assets/img/card/loupe.png" alt="">
+                            show more
+                        </button>
+
+                        <div class="rating rating--view" data-total-value="2">
+                            <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+
+                        <img class="card__view__comment" src="assets/img/card/comment.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card__description">2 bedroom house for rent in Dubai</div>
+                <div class="card__footer">
+                    <div class="card__title card__title">Vision Agency</div>
+
+                    <div class="rating">
+                        <div class="rating__item" data-item-value="5"><span>★</span></div>
+                        <div class="rating__item" data-item-value="4"><span>★</span></div>
+                        <div class="rating__item" data-item-value="3"><span>★</span></div>
+                        <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                        <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card card--music">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/2.png" alt="">
+                    <img src="assets/img/music.png" alt="" class="card__icon">
+
+                    <div class="card__view">
+                        <button class="show-more">
+                            <img src="assets/img/card/loupe.png" alt="">
+                            show more
+                        </button>
+
+                        <div class="rating rating--view" data-total-value="2">
+                            <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+
+                        <img class="card__view__comment" src="assets/img/card/comment.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card__description">Beach party festival 2014</div>
+                <div class="card__footer">
+                    <div class="card__title card__title">Long beach</div>
+
+                    <div class="rating">
+                        <div class="rating__item" data-item-value="5"><span>★</span></div>
+                        <div class="rating__item" data-item-value="4"><span>★</span></div>
+                        <div class="rating__item" data-item-value="3"><span>★</span></div>
+                        <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                        <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card card--trans">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/1.png" alt="">
+                    <img src="assets/img/trans.png" alt="" class="card__icon">
+
+                    <div class="card__view">
+                        <button class="show-more">
+                            <img src="assets/img/card/loupe.png" alt="">
+                            show more
+                        </button>
+
+                        <div class="rating rating--view" data-total-value="2">
+                            <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+
+                        <img class="card__view__comment" src="assets/img/card/comment.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card__description">Aliquam quis pulvinar purus</div>
+                <div class="card__footer">
+                    <div class="card__title card__title">Bus Trans</div>
+
+                    <div class="rating">
+                        <div class="rating__item" data-item-value="5"><span>★</span></div>
+                        <div class="rating__item" data-item-value="4"><span>★</span></div>
+                        <div class="rating__item" data-item-value="3"><span>★</span></div>
+                        <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                        <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card card--agency">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/3.png" alt="">
+                    <div class="price"><p>$2,990</p></div>
+                    <img src="assets/img/agency.png" alt="" class="card__icon">
+
+                    <div class="card__view">
+                        <button class="show-more">
+                            <img src="assets/img/card/loupe.png" alt="">
+                            show more
+                        </button>
+
+                        <div class="rating rating--view" data-total-value="2">
+                            <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+
+                        <img class="card__view__comment" src="assets/img/card/comment.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card__description">4 bedroom house for rent in Dubai</div>
+                <div class="card__footer">
+                    <div class="card__title card__title">Reality Agency</div>
+
+                    <div class="rating">
+                        <div class="rating__item" data-item-value="5"><span>★</span></div>
+                        <div class="rating__item" data-item-value="4"><span>★</span></div>
+                        <div class="rating__item" data-item-value="3"><span>★</span></div>
+                        <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                        <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card__long card--agency">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/4.png" alt="">
+                    <img src="assets/img/agency.png" alt="" class="card__icon">
+
+                    <div class="card__long__title">
+                        <p>Vision Agency</p>
+                        <div class="rating">
+                            <div class="rating__item" data-item-value="5"><span>★</span></div>
+                            <div class="rating__item" data-item-value="4"><span>★</span></div>
+                            <div class="rating__item" data-item-value="3"><span>★</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rating rating--view" data-total-value="2">
+                    <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                    <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                    <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                    <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                    <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                </div>
+
+                <div class="card__long__feedback">
+                    <img class="avatar" src="assets/img/card/avatar1.png" alt="">
+
+                    <div class="feedback">
+                        <div class="user-name">Lucy-P</div>
+                        <div class="feedback-text">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis
+                            posuere orci ornare. Duis mattis sagittis fringilla.”<span>...read more</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__long card--music">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/5.png" alt="">
+                    <img src="assets/img/music.png" alt="" class="card__icon">
+
+                    <div class="card__long__title">
+                        <p>Vision Agency</p>
+                        <div class="rating">
+                            <div class="rating__item" data-item-value="5"><span>★</span></div>
+                            <div class="rating__item" data-item-value="4"><span>★</span></div>
+                            <div class="rating__item" data-item-value="3"><span>★</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rating rating--view" data-total-value="2">
+                    <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                    <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                    <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                    <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                    <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                </div>
+
+                <div class="card__long__feedback">
+                    <img class="avatar" src="assets/img/card/avatar2.png" alt="">
+
+                    <div class="feedback">
+                        <div class="user-name">Peter145</div>
+                        <div class="feedback-text">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis
+                            posuere orci ornare. Duis mattis sagittis fringilla.”<span>...read more</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card--agency">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/1.png" alt="">
+                    <div class="price"><p>$2,990</p></div>
+                    <img src="assets/img/agency.png" alt="" class="card__icon">
+
+                    <div class="card__view">
+                        <button class="show-more">
+                            <img src="assets/img/card/loupe.png" alt="">
+                            show more
+                        </button>
+
+                        <div class="rating rating--view" data-total-value="2">
+                            <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+
+                        <img class="card__view__comment" src="assets/img/card/comment.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card__description">2 bedroom house for rent in Dubai</div>
+                <div class="card__footer">
+                    <div class="card__title card__title">Vision Agency</div>
+
+                    <div class="rating">
+                        <div class="rating__item" data-item-value="5"><span>★</span></div>
+                        <div class="rating__item" data-item-value="4"><span>★</span></div>
+                        <div class="rating__item" data-item-value="3"><span>★</span></div>
+                        <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                        <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card card--music">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/2.png" alt="">
+                    <img src="assets/img/music.png" alt="" class="card__icon">
+
+                    <div class="card__view">
+                        <button class="show-more">
+                            <img src="assets/img/card/loupe.png" alt="">
+                            show more
+                        </button>
+
+                        <div class="rating rating--view" data-total-value="2">
+                            <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+
+                        <img class="card__view__comment" src="assets/img/card/comment.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card__description">Beach party festival 2014</div>
+                <div class="card__footer">
+                    <div class="card__title card__title">Long beach</div>
+
+                    <div class="rating">
+                        <div class="rating__item" data-item-value="5"><span>★</span></div>
+                        <div class="rating__item" data-item-value="4"><span>★</span></div>
+                        <div class="rating__item" data-item-value="3"><span>★</span></div>
+                        <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                        <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card card--trans">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/1.png" alt="">
+                    <img src="assets/img/trans.png" alt="" class="card__icon">
+
+                    <div class="card__view">
+                        <button class="show-more">
+                            <img src="assets/img/card/loupe.png" alt="">
+                            show more
+                        </button>
+
+                        <div class="rating rating--view" data-total-value="2">
+                            <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+
+                        <img class="card__view__comment" src="assets/img/card/comment.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card__description">Aliquam quis pulvinar purus</div>
+                <div class="card__footer">
+                    <div class="card__title card__title">Bus Trans</div>
+
+                    <div class="rating">
+                        <div class="rating__item" data-item-value="5"><span>★</span></div>
+                        <div class="rating__item" data-item-value="4"><span>★</span></div>
+                        <div class="rating__item" data-item-value="3"><span>★</span></div>
+                        <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                        <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card card--agency">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/3.png" alt="">
+                    <div class="price"><p>$2,990</p></div>
+                    <img src="assets/img/agency.png" alt="" class="card__icon">
+
+                    <div class="card__view">
+                        <button class="show-more">
+                            <img src="assets/img/card/loupe.png" alt="">
+                            show more
+                        </button>
+
+                        <div class="rating rating--view" data-total-value="2">
+                            <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+
+                        <img class="card__view__comment" src="assets/img/card/comment.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card__description">4 bedroom house for rent in Dubai</div>
+                <div class="card__footer">
+                    <div class="card__title card__title">Reality Agency</div>
+
+                    <div class="rating">
+                        <div class="rating__item" data-item-value="5"><span>★</span></div>
+                        <div class="rating__item" data-item-value="4"><span>★</span></div>
+                        <div class="rating__item" data-item-value="3"><span>★</span></div>
+                        <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                        <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card__long card--music">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/5.png" alt="">
+                    <img src="assets/img/music.png" alt="" class="card__icon">
+
+                    <div class="card__long__title">
+                        <p>Vision Agency</p>
+                        <div class="rating">
+                            <div class="rating__item" data-item-value="5"><span>★</span></div>
+                            <div class="rating__item" data-item-value="4"><span>★</span></div>
+                            <div class="rating__item" data-item-value="3"><span>★</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rating rating--view" data-total-value="2">
+                    <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                    <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                    <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                    <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                    <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                </div>
+
+                <div class="card__long__feedback">
+                    <img class="avatar" src="assets/img/card/avatar2.png" alt="">
+
+                    <div class="feedback">
+                        <div class="user-name">Peter145</div>
+                        <div class="feedback-text">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis
+                            posuere orci ornare. Duis mattis sagittis fringilla.”<span>...read more</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card--agency">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/1.png" alt="">
+                    <div class="price"><p>$2,990</p></div>
+                    <img src="assets/img/agency.png" alt="" class="card__icon">
+
+                    <div class="card__view">
+                        <button class="show-more">
+                            <img src="assets/img/card/loupe.png" alt="">
+                            show more
+                        </button>
+
+                        <div class="rating rating--view" data-total-value="2">
+                            <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+
+                        <img class="card__view__comment" src="assets/img/card/comment.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card__description">2 bedroom house for rent in Dubai</div>
+                <div class="card__footer">
+                    <div class="card__title card__title">Vision Agency</div>
+
+                    <div class="rating">
+                        <div class="rating__item" data-item-value="5"><span>★</span></div>
+                        <div class="rating__item" data-item-value="4"><span>★</span></div>
+                        <div class="rating__item" data-item-value="3"><span>★</span></div>
+                        <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                        <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card card--music">
+                <div class="card__preview ">
+                    <img class="card__bg" src="assets/img/card/2.png" alt="">
+                    <img src="assets/img/music.png" alt="" class="card__icon">
+
+                    <div class="card__view">
+                        <button class="show-more">
+                            <img src="assets/img/card/loupe.png" alt="">
+                            show more
+                        </button>
+
+                        <div class="rating rating--view" data-total-value="2">
+                            <div class="rating__item" data-item-value="5"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="4"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="3"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                            <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                        </div>
+
+                        <img class="card__view__comment" src="assets/img/card/comment.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card__description">Beach party festival 2014</div>
+                <div class="card__footer">
+                    <div class="card__title card__title">Long beach</div>
+
+                    <div class="rating">
+                        <div class="rating__item" data-item-value="5"><span>★</span></div>
+                        <div class="rating__item" data-item-value="4"><span>★</span></div>
+                        <div class="rating__item" data-item-value="3"><span>★</span></div>
+                        <div class="rating__item" data-item-value="2"><span>☆</span></div>
+                        <div class="rating__item" data-item-value="1"><span>☆</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="load-more">Load more🠒</div>
+        </div>
+    </div>
+</div>
+
+<!--Offers-->
+<!--  Offers-->
+<section class="offers">
+    <div class="title">What can DuHoot offer to you?</div>
+    <div class="subtitle">Etiam cursus ipsum quis enim faucibus</div>
+
+    <div class="offers__item">
+        <div class="offer offer--reality active"></div>
+        <div class="offer offer--person"></div>
+        <div class="offer offer--education"></div>
+        <div class="offer offer--music"></div>
+        <div class="offer offer--trans"></div>
+    </div>
+
+    <div class="offer__title">Reality</div>
+    <div class="offer__description">
+        <div class="offer__description__col">
+            <div class="offer__description-img">
+                <img src="assets/img/offers/flesh.png" alt="">
+            </div>
+            <p class="offer__description-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+        </div>
+        <div class="offer__description__col">
+            <div class="offer__description-img">
+                <img src="assets/img/offers/sheet.png" alt="">
+            </div>
+            <p class="offer__description-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<!--  Footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__title">Subscribe to our newsletter</div>
+
+        <form action="action">
+            <label for="subscribe-mail" class="subscribe-mail-input">
+                <img src="assets/img/footer/send.png" alt="">
+                <input type="text" id="subscribe-mail" placeholder="Your email...">
+                <button class="subscribe-btn">subscribe</button>
+            </label>
+        </form>
+
+        <div class="footer__inner">
+            <div class="footer__inner-col">
+                <div class="title">Ipsun quis</div>
+
+                <p class="ref">Aliquam quis</p>
+                <p class="ref">Pulvinar purus</p>
+                <p class="ref">Etiam cursus</p>
+                <p class="ref">Ipsum quis</p>
+                <p class="ref">Enim faucibus</p>
+            </div>
+
+            <div class="footer__inner-col">
+                <div class="title">Ipsun quis</div>
+
+                <p class="ref">Aliquam quis</p>
+                <p class="ref">Pulvinar purus</p>
+                <p class="ref">Etiam cursus</p>
+                <p class="ref">Ipsum quis</p>
+                <p class="ref">Enim faucibus</p>
+            </div>
+
+            <div class="footer__inner-col">
+                <div class="title">Ipsun quis</div>
+
+                <div class="social">
+                    <img src="assets/img/footer/facebook.png" alt="">
+                    <img src="assets/img/footer/twitter.png" alt="">
+                    <img src="assets/img/footer/g+.png" alt="">
+                    <img src="assets/img/footer/you-tube.png" alt="">
+                </div>
+
+                <p class="ref copyright">Copyright © All Rights reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--loginModal-->
+<div class="modal__wafer" id="modalLoginWafer">
+    <div class="modal" id="modalLogin">
+        <h1>Log in</h1>
+
+        <form action="">
+            <div class="modal-form">
+                <div class="labels">
+                    <p>email:</p>
+                    <p>password:</p>
+                </div>
+
+                <div class="inputs">
+                    <input type="email" class="email" placeholder="Enter your email...">
+                    <input type="password" class="password" placeholder="Enter your password...">
+                </div>
+            </div>
+
+            <button class="send">Log in</button>
+        </form>
+
+        <div class="modal__footer">
+            <a class="modal__footer-item show-modal-recovery">Забыли пароль?</a>
+            <a class="modal__footer-item show-modal-sign-up">Регистрация</a>
+        </div>
+    </div>
+</div>
+
+<div class="modal__wafer" id="modalRecoveryWafer">
+    <div class="modal" id="modalRecovery">
+        <h1>Password Recovery</h1>
+
+        <form action="">
+            <div class="modal-form">
+                <div class="labels">
+                    <p>email:</p>
+                </div>
+
+                <div class="inputs">
+                    <input type="email" class="email" placeholder="Enter your email...">
+                </div>
+            </div>
+
+            <button class="send">Send</button>
+        </form>
+
+        <div class="modal__footer">
+            <a class="modal__footer-item show-modal-login">Войти</a>
+            <a class="modal__footer-item show-modal-sign-up">Регистрация</a>
+        </div>
+    </div>
+</div>
+
+<div class="modal__wafer" id="modalSignUpWafer">
+    <div class="modal" id="modalSignUp">
+        <h1>Sign Up</h1>
+
+        <form action="">
+            <div class="modal-form">
+                <div class="labels">
+                    <p>email:</p>
+                    <p>password:</p>
+                    <p>again:</p>
+                </div>
+
+                <div class="inputs">
+                    <input type="email" class="email" placeholder="Create your email...">
+                    <input type="password" class="email" placeholder="Create your email...">
+                    <input type="password" class="email" placeholder="Repeat the password...">
+                </div>
+            </div>
+
+            <button class="send">Sign up</button>
+        </form>
+
+        <div class="modal__footer">
+            <a class="modal__footer-item show-modal-login">Войти</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal__wafer" id="mapModal">
+    <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17892.923758486995!2d38.123669500649534!3d55.90402786564913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ad392635b0f57%3A0x4a8e0e2757dc8534!2z0KHQstC10YDQtNC70L7QstGB0LrQuNC5LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCAxNDExNDA!5e0!3m2!1sru!2sru!4v1616246251987!5m2!1sru!2sru"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+
+    </iframe>
+</div>
+
+<script type="text/javascript" src="./assets/js/bundle.js"></script></body>
+</html>

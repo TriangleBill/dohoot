@@ -1,0 +1,47 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  transition: background-image .2s linear;
+
+  &.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    background-image: url("../../img/search/arrow-rotate.png");
+
+    .select__body {
+      display: block;
+    }
+  }
+
+  &__body {
+    @include input();
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    top: 100%;
+
+
+    background-image: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    @media (max-width: 520px) {
+      max-width: none;
+      font-size: 14px;
+    }
+  }
+
+  &__item {
+    padding: 5px 0;
+    transition: all .2s linear;
+
+    &:hover {
+      color: darken(white, 25%);
+    }
+  }
+}
